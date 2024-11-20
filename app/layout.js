@@ -8,6 +8,7 @@ import {
   SignedOut,
   UserButton
 } from '@clerk/nextjs'
+import Header from "./components/Header";
 
 export const metadata = {
   title: "ZCRUM",
@@ -25,12 +26,13 @@ export default function RootLayout({ children }) {
           className={inter.className}
         >
           <ThemeProvider attribute="class" defaultTheme="dark" >
-          <SignedOut>
+            <Header />
+          {/* <SignedOut>
             <SignInButton />
           </SignedOut>
           <SignedIn>
             <UserButton />
-          </SignedIn>
+          </SignedIn> */}
             <main className="min-h-screen">{children}</main>
             <footer className="bg-gray-900 py-12">
               <div className="container mx-auto px-4 text-center text-gray-200">
