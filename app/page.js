@@ -78,8 +78,9 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="container mx-auto py-20 text-center">
-        <h1 className="text-6xl sm:text-7xl lg:text-8xl font-extrabold gradient-title pb-6 flex flex-col">
-          Streamline Your Workflow <br />
+
+        <h1 className="text-6xl sm:text-7xl leading-snug lg:text-8xl font-bold gradient-title pb-6 flex flex-col lg:leading-normal">
+          Your workflow made efficient <br />
           <span className="flex mx-auto gap-3 sm:gap-4 items-center">
             with
             <Image
@@ -87,11 +88,18 @@ export default function Home() {
               alt="vital Logo"
               width={400}
               height={80}
-              className="h-14 sm:h-24 w-auto object-contain"
+              className="h-16 sm:h-24 w-auto object-contain"
+            />
+            <Image
+              src={"/d1.png"}
+              alt="d1"
+              width={300}
+              height={80}
+              className="h-6 sm:h-14 w-auto object-contain"
             />
           </span>
         </h1>
-        <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
+        <p className="text-xl text-gray-700 mb-10 max-w-3xl mx-auto">
           Empower your team with our intuitive project management solution.
         </p>
         <p className="text-xl mb-12 max-w-2xl mx-auto"></p>

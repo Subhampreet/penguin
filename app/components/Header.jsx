@@ -13,7 +13,7 @@ async function Header() {
 
   return (
     <header className="container mx-auto">
-      <nav className="py-6 px-4 flex justify-between items-center">
+      <nav className="py-6 px-6 flex justify-between items-center">
         <Link href="/">
           <h1 className="text-2xl font-bold">
             <Image
