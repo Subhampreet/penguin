@@ -77,42 +77,51 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="container mx-auto py-20 text-center">
-
-        <h1 className="text-6xl sm:text-7xl leading-snug lg:text-8xl font-bold gradient-title pb-6 flex flex-col lg:leading-normal">
-          Your workflow made efficient <br />
-          <span className="flex mx-auto gap-3 sm:gap-4 items-center">
-            with
-            <Image
-              src={"/logo2.png"}
-              alt="vital Logo"
-              width={400}
-              height={80}
-              className="h-16 sm:h-24 w-auto object-contain"
-            />
-            <Image
-              src={"/d1.png"}
-              alt="d1"
-              width={300}
-              height={80}
-              className="h-6 sm:h-14 w-auto object-contain"
-            />
-          </span>
-        </h1>
-        <p className="text-xl text-gray-700 mb-10 max-w-3xl mx-auto">
-          Empower your team with our intuitive project management solution.
-        </p>
-        <p className="text-xl mb-12 max-w-2xl mx-auto"></p>
-        <Link href="/onboarding">
-          <Button size="lg" className="mr-4">
-            Get Started <ChevronRight size={18} className="ml-1" />
-          </Button>
-        </Link>
-        <Link href="#features">
-          <Button size="lg" variant="outline">
-            Learn More
-          </Button>
-        </Link>
+      <section className="w-5/6 container mx-auto py-5 text-left grid grid-cols-1 lg:grid-cols-2 gap-7 items-center pb-20">
+        <div className="">
+          <h1 className="text-6xl sm:text-7xl leading-snug lg:text-7xl font-bold gradient-title pb-6 flex flex-col lg:leading-tight">
+            Your workflow made efficient <br />
+            <span className="flex gap-3 sm:gap-4 items-center">
+              with
+              <Image
+                src={"/logo2.png"}
+                alt="vital Logo"
+                width={400}
+                height={80}
+                className="h-14 sm:h-20 w-auto object-contain"
+              />
+              <Image
+                src={"/d1.png"}
+                alt="d1"
+                width={300}
+                height={80}
+                className="h-6 sm:h-12 w-auto object-contain"
+              />
+            </span>
+          </h1>
+          <p className="text-xl text-gray-700 mb-8 max-w-3xl w-5/6">
+            Empower your team with our intuitive project management solution.
+          </p>
+          <Link href="/onboarding">
+            <Button size="lg" className="mr-4">
+              Get Started <ChevronRight size={18} className="ml-1" />
+            </Button>
+          </Link>
+          <Link href="#features">
+            <Button size="lg" variant="outline">
+              Learn More
+            </Button>
+          </Link>
+        </div>
+        <div>
+          <Image
+            src={"/d2.png"}
+            alt="d2"
+            width={300}
+            height={80}
+            className="w-10/12 mx-auto object-contain rounded-3xl"
+          />
+        </div>
       </section>
 
       {/* Features Section */}
