@@ -125,7 +125,7 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="bg-gray-800 py-20 px-5">
+      <section id="features" className="bg-gray-800 py-20 px-5 w-11/12 mx-auto rounded-2xl">
         <div className="container mx-auto">
           <h3 className="text-3xl font-bold mb-12 text-center text-slate-200">Key Features</h3>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
