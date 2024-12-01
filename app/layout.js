@@ -23,6 +23,7 @@ export default function RootLayout({ children }) {
           className={inter.className}
         >
           {/* <ThemeProvider attribute="class" defaultTheme="dark" > */}
+            <Header />
             <main className="min-h-screen">{children}</main>
             <Toaster richColors />
             <footer className="bg-gray-900 py-12">
