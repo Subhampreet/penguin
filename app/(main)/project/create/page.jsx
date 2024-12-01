@@ -12,7 +12,7 @@ import useFetch from "@/hooks/use-fetch";
 import { projectSchema } from "@/app/lib/validators";
 import { createProject } from "@/actions/projects";
 import { BarLoader } from "react-spinners";
-import OrgSwitcher from "@/components/org-switcher";
+import OrgSwitcher from "@/app/components/org-switcher";
 
 export default function CreateProjectPage() {
   const router = useRouter();

@@ -6,14 +6,17 @@ import ProjectList from "./_components/project-list";
 import UserIssues from "./_components/user-issues";
 
 export default async function OrganizationPage({ params }) {
+  // console.log(params);
+
+  const { userId } = await auth();
   const { orgId } = params;
-  const { userId } = auth();
+  console.log("ORG ID" + orgId)
 
   if (!userId) {
     redirect("/sign-in");
   }
 
-  const organization = await getOrganization(orgId);
+  const organization = await getOrganization();
 
   if (!organization) {
     return <div>Organization not found</div>;
